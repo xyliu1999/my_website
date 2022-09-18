@@ -85,9 +85,9 @@ params:
         subtitle: This is my CV in English/Chinese.
         title: CV
         url: blogs/risk_return
-      - image: pic02.jpg
-        subtitle: Feugiat Amet Tempus
-        title: Tempus
+      - image: haimis.jpg
+        #subtitle: Feugiat Amet Tempus
+        title: Ten fun facts about me
         url: blogs/tempus
       - image: pic03.jpg
         subtitle: Lorem Etiam Nullam
