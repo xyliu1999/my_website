@@ -51,9 +51,9 @@ params:
       #- icon: fa-instagram
        # label: Instagram
         #url: https://www.instagram.com
-      #- icon: fa-github
-       # label: GitHub
-        #url: https://www.github.com
+      - icon: fa-github
+        label: GitHub
+        url: https://github.com/xyliu1999
       - icon: fa-linkedin
         label: LinkedIn
         url: https://www.linkedin.com/in/liu-xueying-9788771a6/
