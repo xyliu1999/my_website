@@ -81,9 +81,9 @@ params:
   tiles:
     enable: yes
     showcase:
-      - image: lbs.jpg
-        subtitle: Ipsum Dolor Sit Amet
-        title: Aliquam
+      - image: disney.jpg
+        subtitle: This is my CV in English/Chinese.
+        title: CV
         url: blogs/risk_return
       - image: pic02.jpg
         subtitle: Feugiat Amet Tempus
