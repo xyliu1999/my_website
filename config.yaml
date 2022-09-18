@@ -7,8 +7,8 @@ disqusShortname: ''
 params:
   banner:
     buttonText: Get Started
-    #subtitle: |-
-     # A RESPONSIVE SITE TEMPLATE DESIGNED BY HTML5 UP
+    subtitle: |-
+      Welcome to my personal website. Here you can find fun facts about me and some of my projects in R.
      # AND RELEASED UNDER THE CREATIVE COMMONS.
     title: Hi, my name is Xueying Liu.
   blog: {}
