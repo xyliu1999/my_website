@@ -93,10 +93,10 @@ params:
      #  subtitle: Lorem Etiam Nullam
      #   title: Magna
     #    url: blogs/magna
-     # - image: pic04.jpg
-      #  subtitle: Nisl Sed Aliquam
-       # title: Ipsum
-        #url: blogs/ipsum
+      - image: vote.jpg
+       # subtitle: Nisl Sed Aliquam
+        title: Brexit vote analysis
+        url: blogs/vote
       - image: map.jpg
         #subtitle: Homework 1
         title: Country Comparison
