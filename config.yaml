@@ -86,7 +86,7 @@ params:
         title: CV
         url: docs/CV.pdf
       - image: haimis.jpg
-        #subtitle: Feugiat Amet Tempus
+        subtitle: My hobbies, my lifestyle...
         title: Eight fun facts about me
         url: blogs/efacts
      # - image: pic03.jpg
@@ -94,11 +94,11 @@ params:
      #   title: Magna
     #    url: blogs/magna
       - image: vote.jpg
-       # subtitle: Nisl Sed Aliquam
+        subtitle: What does the result of Brexit Vote tell us?
         title: Brexit vote analysis
         url: blogs/vote
       - image: map.jpg
-        #subtitle: Homework 1
+        subtitle: How life expectancy differ in different continents?
         title: Country Comparison
         url: blogs/xueyingliu
      # - image: pic06.jpg
