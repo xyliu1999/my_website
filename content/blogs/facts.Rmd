@@ -28,6 +28,20 @@ knitr::opts_chunk$set(
 )
 ```
 
+```{r load-libraries, warning=FALSE, message=FALSE, echo=FALSE}
+library(tidyverse)  # Load ggplot2, dplyr, and all the other tidyverse packages
+library(lubridate)
+library(here)
+library(skimr)
+library(janitor)
+library(vroom)
+library(tidyquant)
+library(rvest)    # scrape websites
+library(purrr)  
+library(lubridate) #to handle dates
+library(ggrepel)
+```
+
 1.  I am completely a dog person. I have 2 dogs, a corgi and a teddy.
 
 2.  I am a musical enthusiast (Now a West End enthusiast in London;\>). *Phantom of the Opera* used to be my favorite musical, but these days I have developed preference for *Les Misérables*...
