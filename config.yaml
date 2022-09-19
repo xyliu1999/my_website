@@ -84,7 +84,7 @@ params:
       - image: disney.jpg
         subtitle: This is my CV in English.
         title: CV
-        url: docs/CV.pd
+        url: docs/CV.pdf
       - image: haimis.jpg
         #subtitle: Feugiat Amet Tempus
         title: Eight fun facts about me
