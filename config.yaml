@@ -101,10 +101,10 @@ params:
         #subtitle: Homework 1
         title: Country Comparison
         url: blogs/xueyingliu
-      - image: pic06.jpg
-        subtitle: Feugiat Amet Tempus
-        title: risk return
-        url: blogs/risk_return
+     # - image: pic06.jpg
+     #  subtitle: Feugiat Amet Tempus
+      #  title: risk return
+       # url: blogs/risk_return
   two:
     buttonText: Get Started
     enable: yes
