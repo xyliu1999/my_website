@@ -88,7 +88,7 @@ params:
       - image: haimis.jpg
         #subtitle: Feugiat Amet Tempus
         title: Eight fun facts about me
-        url: blogs/facts
+        url: blogs/efacts
      # - image: pic03.jpg
      #  subtitle: Lorem Etiam Nullam
      #   title: Magna
