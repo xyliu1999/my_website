@@ -78,7 +78,7 @@ continent_data &lt;- gapminder %&gt;%
 
  plot1</code></pre>
 <pre><code>## `geom_smooth()` using method = &#39;loess&#39; and formula &#39;y ~ x&#39;</code></pre>
-<p><img src="/blogs/Xueying_Liu_files/figure-html/lifeExp_China-1.png" width="672" /></p>
+<p><img src="/blogs/xueyingliu_files/figure-html/lifeExp_China-1.png" width="672" /></p>
 <p>Next we need to add a title. Create a new plot, or extend plot1, using the <code>labs()</code> function to add an informative title to the plot.</p>
 <pre class="r"><code> plot1&lt;- plot1 +
    labs(title = &quot;China_life expextancy over time&quot;,
@@ -89,14 +89,14 @@ continent_data &lt;- gapminder %&gt;%
 
  plot1</code></pre>
 <pre><code>## `geom_smooth()` using method = &#39;loess&#39; and formula &#39;y ~ x&#39;</code></pre>
-<p><img src="/blogs/Xueying_Liu_files/figure-html/lifeExp_China1-1.png" width="672" /></p>
+<p><img src="/blogs/xueyingliu_files/figure-html/lifeExp_China1-1.png" width="672" /></p>
 <p>Secondly, produce a plot for all countries in the <em>continent</em> you come from. (Hint: map the <code>country</code> variable to the colour aesthetic. You also want to map <code>country</code> to the <code>group</code> aesthetic, so all points for each country are grouped together).</p>
 <pre class="r"><code> ggplot(continent_data, mapping = aes(x =year  , y = lifeExp, colour=country , group = country))+
    geom_point()+ 
    geom_smooth(se = FALSE) +
    NULL</code></pre>
 <pre><code>## `geom_smooth()` using method = &#39;loess&#39; and formula &#39;y ~ x&#39;</code></pre>
-<p><img src="/blogs/Xueying_Liu_files/figure-html/lifeExp_Asia-1.png" width="672" /></p>
+<p><img src="/blogs/xueyingliu_files/figure-html/lifeExp_Asia-1.png" width="672" /></p>
 <p>Finally, using the original <code>gapminder</code> data, produce a life expectancy over time graph, grouped (or faceted) by continent. We will remove all legends, adding the <code>theme(legend.position="none")</code> in the end of our ggplot.</p>
 <pre class="r"><code> ggplot(data = gapminder , mapping = aes(x = year , y = lifeExp , colour=continent ))+
    geom_point() + 
@@ -105,7 +105,7 @@ continent_data &lt;- gapminder %&gt;%
    theme(legend.position=&quot;none&quot;) + #remove all legends
    NULL</code></pre>
 <pre><code>## `geom_smooth()` using method = &#39;loess&#39; and formula &#39;y ~ x&#39;</code></pre>
-<p><img src="/blogs/Xueying_Liu_files/figure-html/lifeExp_facet_by_continent-1.png" width="672" /></p>
+<p><img src="/blogs/xueyingliu_files/figure-html/lifeExp_facet_by_continent-1.png" width="672" /></p>
 <p>Given these trends, what can you say about life expectancy since 1952? Again, don’t just say what’s happening in the graph. Tell some sort of story and speculate about the differences in the patterns.</p>
 <blockquote>
 <p>For China, the life expectancy has been growing since 1952. However, the speed of the growth of life expectancy in China decreased in the late 1970s. I think this is because since 1978, China’s Reform and Opening-Up has begun, which has changed people’s lifestyle and living standards to a certain extent and brought about the changes in the speed of growth of life expectancy.</p>
@@ -144,7 +144,7 @@ labs(title = &quot;2016 UK Brexit Vote Results&quot;,subtitle=&quot;histogram&qu
        x = &quot;leave_share(the percent of votes cast in favour of Brexit)&quot;,
        y = &quot;count(the number of constituencies)&quot;) +
    NULL</code></pre>
-<p><img src="/blogs/Xueying_Liu_files/figure-html/brexit_histogram-1.png" width="672" /></p>
+<p><img src="/blogs/xueyingliu_files/figure-html/brexit_histogram-1.png" width="672" /></p>
 <pre class="r"><code># density plot-- think smoothed histogram
 ggplot(brexit_results, aes(x = leave_share)) +
   geom_density()+
@@ -152,7 +152,7 @@ labs(title = &quot;2016 UK Brexit Vote Results&quot;,subtitle=&quot;Probability 
        x = &quot;leave_share(the percent of votes cast in favour of Brexit)&quot;,
        y = &quot;PDF&quot;) +
    NULL</code></pre>
-<p><img src="/blogs/Xueying_Liu_files/figure-html/brexit_histogram-2.png" width="672" /></p>
+<p><img src="/blogs/xueyingliu_files/figure-html/brexit_histogram-2.png" width="672" /></p>
 <pre class="r"><code># The empirical cumulative distribution function (ECDF) 
 ggplot(brexit_results, aes(x = leave_share)) +
   stat_ecdf(geom = &quot;step&quot;, pad = FALSE) +
@@ -161,7 +161,7 @@ ggplot(brexit_results, aes(x = leave_share)) +
        x = &quot;leave_share(the percent of votes cast in favour of Brexit)&quot;,
        y = &quot;ECDF&quot;) +
    NULL</code></pre>
-<p><img src="/blogs/Xueying_Liu_files/figure-html/brexit_histogram-3.png" width="672" /></p>
+<p><img src="/blogs/xueyingliu_files/figure-html/brexit_histogram-3.png" width="672" /></p>
 <p>One common explanation for the Brexit outcome was fear of immigration and opposition to the EU’s more open border policy. We can check the relationship (or correlation) between the proportion of native born residents (<code>born_in_uk</code>) in a constituency and its <code>leave_share</code>. To do this, let us get the correlation between the two variables</p>
 <pre class="r"><code>brexit_results %&gt;% 
   select(leave_share, born_in_uk) %&gt;% 
@@ -183,7 +183,7 @@ ggplot(brexit_results, aes(x = leave_share)) +
        y = &quot;leave_share&quot;) +
   NULL</code></pre>
 <pre><code>## `geom_smooth()` using formula &#39;y ~ x&#39;</code></pre>
-<p><img src="/blogs/Xueying_Liu_files/figure-html/brexit_immigration_plot-1.png" width="672" /></p>
+<p><img src="/blogs/xueyingliu_files/figure-html/brexit_immigration_plot-1.png" width="672" /></p>
 <p>You have the code for the plots, I would like you to revisit all of them and use the <code>labs()</code> function to add an informative title, subtitle, and axes titles to all plots.</p>
 <p>What can you say about the relationship shown above? Again, don’t just say what’s happening in the graph. Tell some sort of story and speculate about the differences in the patterns.</p>
 <blockquote>
@@ -406,14 +406,14 @@ base_plot &lt;- animal_rescue %&gt;%
   theme_bw()
 
 base_plot + geom_histogram()</code></pre>
-<p><img src="/blogs/Xueying_Liu_files/figure-html/plots_on_incident_cost_by_animal_group-1.png" width="672" /></p>
+<p><img src="/blogs/xueyingliu_files/figure-html/plots_on_incident_cost_by_animal_group-1.png" width="672" /></p>
 <pre class="r"><code>base_plot + geom_density()</code></pre>
-<p><img src="/blogs/Xueying_Liu_files/figure-html/plots_on_incident_cost_by_animal_group-2.png" width="672" /></p>
+<p><img src="/blogs/xueyingliu_files/figure-html/plots_on_incident_cost_by_animal_group-2.png" width="672" /></p>
 <pre class="r"><code>base_plot + geom_boxplot()</code></pre>
-<p><img src="/blogs/Xueying_Liu_files/figure-html/plots_on_incident_cost_by_animal_group-3.png" width="672" /></p>
+<p><img src="/blogs/xueyingliu_files/figure-html/plots_on_incident_cost_by_animal_group-3.png" width="672" /></p>
 <pre class="r"><code>base_plot + stat_ecdf(geom = &quot;step&quot;, pad = FALSE) +
   scale_y_continuous(labels = scales::percent)</code></pre>
-<p><img src="/blogs/Xueying_Liu_files/figure-html/plots_on_incident_cost_by_animal_group-4.png" width="672" /></p>
+<p><img src="/blogs/xueyingliu_files/figure-html/plots_on_incident_cost_by_animal_group-4.png" width="672" /></p>
 <p>Which of these four graphs do you think best communicates the variability of the <code>incident_notional_cost</code> values? Also, can you please tell some sort of story (which animals are more expensive to rescue than others, the spread of values) and speculate about the differences in the patterns.</p>
 <blockquote>
 <p>The box plot. It clearly shows us the distribution of the cost by additionally visualizing the mean and the median.</p>
