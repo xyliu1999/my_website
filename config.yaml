@@ -82,13 +82,13 @@ params:
     enable: yes
     showcase:
       - image: disney.jpg
-        subtitle: This is my CV in English/Chinese.
+        subtitle: This is my CV in English.
         title: CV
-        url: blogs/risk_return
+        url: docs/CV.pd
       - image: haimis.jpg
         #subtitle: Feugiat Amet Tempus
-        title: Ten fun facts about me
-        url: blogs/tempus
+        title: Eight fun facts about me
+        url: blogs/facts
       - image: pic03.jpg
         subtitle: Lorem Etiam Nullam
         title: Magna
