@@ -2,7 +2,7 @@
 categories:  
 - ""    #the front matter should be like the one found in, e.g., blog2.md. It cannot be like the normal Rmd we used
 - ""
-date: "2022-09-20"
+date: "2022-09-18"
 description: Eight fun facts about me # the title that will show up once someone gets to this page
 draft: false
 image: dogs.jpg # save picture in \static\img\blogs. Acceptable formats= jpg, jpeg, or png . Your iPhone pics wont work
