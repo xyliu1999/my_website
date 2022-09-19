@@ -97,22 +97,17 @@ params:
       #  subtitle: Nisl Sed Aliquam
        # title: Ipsum
         #url: blogs/ipsum
-      - image: pic05.jpg
+      - image: map.jpg
         #subtitle: Homework 1
         title: Country Comparison
         url: blogs/xueyingliu
       - image: pic06.jpg
         subtitle: Feugiat Amet Tempus
-        title: Etiam
+        title: risk return
         url: blogs/risk_return
   two:
     buttonText: Get Started
     enable: yes
-    subtitle: "Nullam et orci eu lorem consequat tincidunt vivamus et sagittis libero.
-      \r\n    Mauris aliquet magna magna sed nunc rhoncus pharetra. \r\n    Pellentesque
-      condimentum sem. In efficitur ligula tate urna. Maecenas laoreet massa vel lacinia
-      pellentesque lorem ipsum dolor. \r\n    Nullam et orci eu lorem consequat tincidunt.
-      Vivamus et sagittis libero.\r\n    Mauris aliquet magna magna sed nunc rhoncus
-      amet pharetra et feugiat tempus."
-    title: Massa libero
+    subtitle: "Hi, this is Serena(Xueying) Liu from London Business School. To find out more about me, please read my blogs. "
+    title: Welcome
     url: blogs
