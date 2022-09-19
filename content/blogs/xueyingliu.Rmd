@@ -11,6 +11,17 @@ keywords: ""
 slug: xueyingliu # slug is the shorthand URL address... no spaces plz
 title: Precourse homework
 ---
+---
+title: 'MAM 2023 Pre-programme Assignment'
+author: "Xueying Liu"
+date: "2022-8-27"
+output:
+  html_document:
+    theme: flatly
+    highlight: zenburn
+    toc: yes
+    toc_float: yes
+---
 
 ```{r load-libraries, warning=FALSE, message=FALSE, echo=FALSE}
 library(tidyverse)  # Load ggplot2, dplyr, and all the other tidyverse packages
